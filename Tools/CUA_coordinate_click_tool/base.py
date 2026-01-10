@@ -1,6 +1,6 @@
 """
 Computer Use Agent - Coordinates Click Tool
-Optimized tool for clicking at screen coordinates using PyAutoGUI and LangChain
+Tool clicking at screen coordinates using PyAutoGUI and LangChain
 """
 
 import pyautogui
@@ -32,7 +32,7 @@ class CoordinatesClickInput(BaseModel):
 
 
 class CoordinatesClickTool(BaseTool):
-    """Optimized tool for clicking at specific screen coordinates"""
+    """Tool for clicking at specific screen coordinates"""
     
     name: str = "coordinates_click"
     description: str = """
@@ -43,12 +43,6 @@ class CoordinatesClickTool(BaseTool):
     - Single or double-click
     - Optional smooth mouse movement
     - Screen bounds validation
-    
-    Use cases:
-    - Click UI elements at known positions
-    - Automated form interactions
-    - Context menu operations
-    - Precise screen navigation
     """
     args_schema: Type[BaseModel] = CoordinatesClickInput
     
