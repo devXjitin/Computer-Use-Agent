@@ -7,6 +7,7 @@ Your capabilities include:
 - Filling forms with appropriate data
 - Navigating through applications and websites
 - Verifying task completion
+- Ensure after completing the task close any opened windows or tabs related to the task.
 
 Task: {question}
 

@@ -18,5 +18,5 @@ chain = prompt | llm
 
 
 # Example usage
-question = "notepad kholo and python mein ek program likho jo user se naam le aur usse greet kare."
+question = "Plan a trip to Paris including flights, accommodation, and sightseeing."
 print(chain.invoke({"question": question}))
